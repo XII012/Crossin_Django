@@ -8,6 +8,9 @@ myvenv
 db.sqlite3
 .DS_Store
 
+$ vim .gitignore
+/.idea/
+
 # C extensions
 *.so
 
