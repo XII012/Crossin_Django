@@ -2,6 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+.DS_Store
 
 # C extensions
 *.so
