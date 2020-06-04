@@ -9,13 +9,17 @@
     </div>
 
     <div>
-        <h2><a href="">My first post</a></h2>
-        <p>paragraph1!!!</p>
+        <h1><a href="">All Published Posts</a> </h1>
+        {{ posts }}
     </div>
 
+    {% for post in posts %}
     <div>
-        <h2><a href="">My second blog</a> </h2>
-        <p>paragraph2!!!</p>
+        <h1><a href="">{{ post.title }}</a> </h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <p>published: {{ post.published_date }}</p>
     </div>
+    {% endfor %}
+
 </body>
 </html>
